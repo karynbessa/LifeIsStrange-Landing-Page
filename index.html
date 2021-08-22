@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Life Is Strange</title>
+  </head>
+  <body>
+    <main>
+    <header id="header">
+      <img src="imgs/logo header.png" alt="logo" id="header-image" />
+      <nav id="nav-bar">
+        <a href="#about" class="nav-link">SOBRE</a>
+        <a href="#games" class="nav-link">JOGOS</a>
+        <a href="#gallery" class="nav-link">GALERIA</a>
+      </nav>
+      <a href="#form" class="newsletter">NEWSLETTER</a>
+    </header>
+    <section class="principal">
+    </section>
+    <div class="video"><video
+      src="https://cdn.cloudflare.steamstatic.com/steam/apps/256838667/movie480_vp9.webm?t=1623615515"
+      id="video"
+      controls
+    ></video></div>
+    
+    <div class="about">
+      <section id="about">
+        <h1>O QUE É LIFE IS STRANGE?</h1>
+        <p>
+          Life is Strange é uma aclamada série de jogos de aventura narrativa,
+          vencedora de diversos prêmios. Descubra um universo no qual heróis
+          comuns lidam com poderes sobrenaturais enquanto enfrentam desafios
+          reais, emoções reais e relacionamentos reais. É o nosso mundo... com
+          um toque de mistério. Sejam quais forem as suas escolhas, a
+          experiência seguirá com você para sempre.
+        </p>
+      </section>
+    </div>
+    <div class="container-games" id="games">
+        <li class="game1">
+          <img src="imgs/true colors.png" alt="" />
+          <p>
+            Alex Chen precisa solucionar o mistério que em torno da morte do seu
+            irmão com o poder psíquico da Empatia.
+          </p>
+          <img src="imgs/alex.jpg" alt="" />
+          <a
+            href="https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/"
+            target="_blank"
+            >COMPRAR</a
+          >
+        </li>
+        <li class="game2">
+          <img src="imgs/life is strange.png" alt="" />
+          <p>
+            Max e Chloe rebobinam o tempo para desvendar os mistérios de Arcadia
+            Bay.
+          </p>
+          <img src="imgs/max and chloe.png" alt="" />
+          <a
+            href="https://store.steampowered.com/app/1265920/Life_is_Strange_Remastered/"
+            target="_blank"
+            >COMPRAR</a
+          >
+        </li>
+        <li class="game3">
+          <img src="imgs/life is strange 2.png" alt="" />
+          <p>
+            Sean Diaz protege o irmão mais novo, Daniel, um garoto com poderes
+            telecinéticos, enquanto foge da polícia.
+          </p>
+          <img src="imgs/daniel and sean.png" alt="" />
+          <a
+            href="https://store.steampowered.com/app/532210/Life_is_Strange_2/"
+            target="_blank"
+            >COMPRAR</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div id="gallery">
+      <img class="slide" src="imgs/1.jpg" alt="">
+      <img class="slide" src="imgs/2.jpg" alt="">
+      <img class="slide" src="imgs/3.jpg" alt="">
+      <img class="slide" src="imgs/4.jpg" alt="">
+      <img class="slide" src="imgs/5.jpg" alt="">
+      <img class="slide" src="imgs/7.jpg" alt="">
+      <img class="slide" src="imgs/8.jpg" alt="">
+      <img class="slide" src="imgs/9.jpg" alt="">
+      <img class="slide" src="imgs/10.jpg" alt="">
+      <img class="slide" src="imgs/11.jpg" alt="">
+      <img class="slide" src="imgs/12.jpg" alt="">
+      <img class="slide" src="imgs/13.jpg" alt="">
+      <img class="slide" src="imgs/14.jpg" alt="">
+      <img class="slide" src="imgs/15.jpg" alt="">
+    </div>
+    <div class="indicator">
+      <button class="button" onclick="plusDivs(-1)">&#10094; PREV</button>
+      <button class="button" onclick="plusDivs(1)">NEXT &#10095;</button>
+    </div>
+   <div class="form">
+     <h3>Se inscreva para receber conteúdo exclusivo de</h3><br>
+     <img src="imgs/logo header.png" alt=""><br>
+      <form action="https://www.freecodecamp.org/email-submit" id="form">
+        <input type="email" name="email" id="email" required placeholder="Digite seu email"/><br>
+        <input type="submit" value="INSCREVA-SE" id="submit" />
+      </form>
+    </div>
+    <script type="text/javascript" src="setup.js"></script>
+    </main>
+  </body>
+</html>

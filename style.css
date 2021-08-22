@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+main {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    position: absolute;
+  }
+
+  #header-image {
+    width: 195px;
+    height: 34px;
+    margin: auto;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .newsletter {
+    margin: auto;
+  }
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.753);
+  position: absolute;
+}
+
+#header-image {
+  width: 195px;
+  height: 34px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 9rem;
+}
+
+#nav-bar {
+  margin-top: 21px;
+  margin-bottom: 13px;
+}
+
+.nav-link {
+  padding-left: 63px;
+  padding-right: 63px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #6a6792;
+}
+
+.newsletter {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-right: 9rem;
+  border: none;
+
+  width: 220px;
+  height: 41px;
+  padding-top: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+.newsletter:hover {
+  background: #6a6792;
+}
+
+/*PRINCIPAL*/
+
+.principal {
+  background: url(imgs/background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 52rem;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .video {
+    width: 1380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video {
+    width: 1080px;
+  }
+}
+
+#video {
+  width: 30%;
+  margin-left: 2rem;
+  margin-top: -30rem;
+  margin-bottom: 2rem;
+}
+
+/*ABOUT*/
+
+.about {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#about {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  margin: auto;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*GAMES*/
+
+@media screen and (max-width: 1060px) {
+  .container-games {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    padding-bottom: 50px;
+  }
+}
+
+.container-games {
+  background-color: #fff;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+li p {
+  width: 300px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+#games a {
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+#games a:hover {
+  background-color: #6a6792;
+}
+
+/*GALLERY*/
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.slide {
+  display: none;
+  width: 80%;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  border: none;
+  padding: 5px 35px;
+  background-color: black;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #6a6792;
+}
+
+/*NEWSLETTER*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 60px;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form h3 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.form img {
+  width: 10rem;
+}
+
+#email {
+  border: none;
+  width: 370px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+#email:focus {
+  outline-color: #6a6792;
+}
+
+#email::placeholder {
+  font-size: 18px;
+  text-align: center;
+}
+
+#submit {
+  border: none;
+  width: 370px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#submit:hover {
+  background-color: #6a6792;
+  cursor: pointer;
+}
